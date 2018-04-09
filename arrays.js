@@ -6,17 +6,23 @@ const chocolateBars = [
 ];
 
 function addElementToBeginningOfArray(arr, el) {
-  let outputArr = arr.unshift(el);
-  return outputArr;
+  let outputArr = arr;
+  return outputArr.unshift(el);
 }
 
 function destructivelyAddElementToBeginningOfArray(arr, el) {
-  return arr.unshift(el);
+  arr.unshift(el);
+  return arr;
 }
-
+function addElementToEndOfArray(arr, el) {
+  let outputArr = arr;
+  outputArr.push(el);
+  return outputArr;
+}
+function destructivelyAddElementToEndOfArray(arr, el) {
+  arr.push(el);
+  return arr;
+}
 function accessElementInArray(arr, i) {
   return arr[i];
-}
-function destructivelyRemoveElementFromBeginningOfArray(arg) {
-  return arr.shift();;
 }
